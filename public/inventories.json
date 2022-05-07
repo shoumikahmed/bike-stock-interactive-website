@@ -1,0 +1,83 @@
+[
+    {
+        "email": "shoumikahmed103@gmail.com",
+        "name": "Honda",
+        "price": "$99,450",
+        "description": "Honda is the world's largest manufacturer of two Wheelers, Recognized the world over as the symbol of Honda two wheelers, the 'Wings' arrived in Bangladesh.",
+        "quantity": "70",
+        "suppliername": "Shoumik Ahmed",
+        "img": "https://images.hindustantimes.com/auto/auto-images/bikes/honda/hondacb350rs/1630601298458_hondacb350rs-1"
+    },
+    {
+        "email": "shoumikahmed103@gmail.com",
+        "name": "Ducati",
+        "price": "$67,000",
+        "description": "All information about our different models of bikes, the racing in MotoGP and Superbike, and dealers. Visit Ducati official website.",
+        "quantity": "50",
+        "suppliername": "Tom cruise",
+        "img": "https://images.hindustantimes.com/auto/auto-images/bikes/ducati/ducatihypermotard950/1630603601539_ducatihypermotard950-1"
+    },
+    {
+        "email": "shoumikahmed103@gmail.com",
+        "name": "Kawasaki",
+        "price": "$78,800",
+        "description": "Official website of Kawasaki Motors Corp., U.S.A., distributor of powersports vehicles including motorcycles, ATVs, Side x Sides and Jet Ski watercraft.",
+        "quantity": "70",
+        "suppliername": "Will Smith",
+        "img": "https://www.drivespark.com/images/2022-02/2022-kawasaki-z650rs-50th-anniversary-2.jpg"
+    },
+    {
+        "email": "shoumikahmed103@gmail.com",
+        "name": "Suzuki",
+        "price": "$78,000",
+        "description": "Welcome to the Suzuki Bangladesh | RANCON MOTORBIKES LTD. official website. Get your Suzuki Motorbike from our range of brand new motorbikes.",
+        "quantity": "88",
+        "suppliername": "Tony Stark",
+        "img": "https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/06/2019-Suzuki-SV650-via-Bennetts-Insurance.jpeg?q=50&fit=crop&w=740&dpr=1.5"
+    },
+    {
+        "email": "shoumikahmed103@gmail.com",
+        "name": "Yamaha",
+        "price": "$95,999",
+        "description": "Yamaha motorcycle price, full specs and reviews in Bangladesh 2022. Yamaha bikes prices, news, all new models, showrooms in Bangladesh.",
+        "quantity": "96",
+        "suppliername": "Ottis Gibson",
+        "img": "https://kickstart.bikeexif.com/wp-content/uploads/2022/03/yamaha-1979-xs650.jpg"
+    },
+    {
+        "email": "shoumikahmed103@gmail.com",
+        "name": "BMW",
+        "price": "$115,500",
+        "description": "BMW Bike (Motorcycle) Price List, Top Model Bikes Overview in India. Find here BMW bike top models, prices, etc. & Buy Roadster, Naked bikes.",
+        "quantity": "40",
+        "suppliername": "Shakib Al Hasan",
+        "img": "https://mediapool.bmwgroup.com/cache/P9/202003/P90386406/P90386406-the-bmw-r-18-first-edition-04-2020-600px.jpg"
+    },
+    {
+        "email": "shoumikahmed103@gmail.com",
+        "name": "Triumph",
+        "price": "$125,500",
+        "description": "The official Triumph site. Motorcycles that deliver the complete riding experience. View our range, find a dealer and test ride a Triumph icon today.",
+        "quantity": "30",
+        "suppliername": "Shoumik Ahmed",
+        "img": "https://www.drivespark.com/images/2021-06/2021-triumph-speed-twin-4.jpg"
+    },
+    {
+        "email": "shoumikahmed103@gmail.com",
+        "name": "Harley Davidson",
+        "price": "$185,500",
+        "description": "Official site of Harley-Davidson Motor Company. Check out current Harley motorcycles, locate a dealer, & browse motorcycle parts and apparel.",
+        "quantity": "94",
+        "suppliername": "Corey Anderson",
+        "img": "https://images.firstpost.com/fpimages/1200x800/fixed/jpg/2021/12/harley-davidson-sportster-s-launched-india-15-51-lakh-price-india-bike-week-2021-1.jpg"
+    },
+    {
+        "email": "shoumikahmed103@gmail.com",
+        "name": "Royal Enfield",
+        "price": "$95,500",
+        "description": "Explore latest motorcycles in India from Royal Enfield including Meteor 350, Himalayan, Classic and Bullet. Book a test ride of your favourite two wheelers.",
+        "quantity": "32",
+        "suppliername": "Nazifa Tasnim",
+        "img": "https://bd.gaadicdn.com/processedimages/royal-enfield/royal-enfield-bullet/640X309/royal-enfield-bullet5ec62452ca468.jpg?tr=w-135"
+    }
+]
