@@ -12,6 +12,8 @@ import Signup from './Pages/Login/Signup/Signup';
 import ManageInventories from './Pages/Home/ManageInventories/ManageInventories';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth'
 import StockUpdate from './Pages/Home/StockUpdate/StockUpdate';
+import AddItem from './Pages/Home/AddItem/AddItem';
+import MyItem from './Pages/Home/MyItem/MyItem';
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<Signup></Signup>}></Route>
         <Route path='/manageinventories' element={<ManageInventories></ManageInventories>}></Route>
+        <Route path='/additem' element={<AddItem></AddItem>}></Route>
+        <Route path='/myitem' element={<MyItem></MyItem>}></Route>
         <Route path='/stockupdate' element={
           <RequireAuth>
             <StockUpdate></StockUpdate>

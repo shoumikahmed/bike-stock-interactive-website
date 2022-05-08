@@ -29,11 +29,27 @@ const Header = () => {
                             <Nav.Link as={Link} to="blogs">Blogs</Nav.Link>
                             {
                                 user ?
-                                    <button className='btn btn-link text-white text-decoration-none' >Manage Inventory</button>
+                                    <Link to="/manageinventories">
+                                        <button className='btn btn-link text-white text-decoration-none' >Manage Inventory</button>
+                                    </Link>
                                     :
-                                    <Nav.Link as={Link} to="manageinventories">
-
-                                    </Nav.Link>
+                                    ''
+                            }
+                            {
+                                user ?
+                                    <Link to="/additem">
+                                        <button className='btn btn-link text-white text-decoration-none' >Add Item</button>
+                                    </Link>
+                                    :
+                                    ''
+                            }
+                            {
+                                user ?
+                                    <Link to="/myitem">
+                                        <button className='btn btn-link text-white text-decoration-none' >My Item</button>
+                                    </Link>
+                                    :
+                                    ''
                             }
                             {
                                 user ?
@@ -41,7 +57,8 @@ const Header = () => {
                                     :
                                     <Nav.Link as={Link} to="login">
                                         Login
-                                    </Nav.Link>}
+                                    </Nav.Link>
+                            }
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
