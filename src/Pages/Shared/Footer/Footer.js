@@ -5,10 +5,10 @@ const Footer = () => {
     const today = new Date()
     const year = today.getFullYear()
     return (
-        <div className="footer bg-dark">
+        <div className="footer ">
             <footer className=' d-flex justify-content-center'>
                 <div className=''>
-                    <div className=' d-flex align-items-center justify-content-center my-3'>
+                    <div className=' d-flex align-items-center justify-content-center my-3 pt-4'>
                         <a
                             href='https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-shoumikahmed'
                             className='text-warning me-4'
@@ -92,8 +92,8 @@ const Footer = () => {
                         </a>
 
                     </div>
-                    <div className='text-center mb-3 text-white'>
-                        All Rights Reserved By &copy; Bike Stock | {year}
+                    <div className='text-center mb-3 text-dark pt-4 pb-2'>
+                        <strong className='text-secondary'>All Rights Reserved By &copy; Bike Stock | {year}</strong>
                     </div>
                 </div>
             </footer>
