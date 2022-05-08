@@ -9,6 +9,7 @@ import Footer from './Pages/Shared/Footer/Footer';
 import NotFound from './Pages/Shared/NotFound/NotFound';
 import Login from './Pages/Login/Login/Login';
 import Signup from './Pages/Login/Signup/Signup';
+import ManageInventories from './Pages/Home/ManageInventories/ManageInventories';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/inventories' element={<Inventories></Inventories>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<Signup></Signup>}></Route>
+        <Route path='/manageinventories' element={<ManageInventories></ManageInventories>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
