@@ -24,7 +24,7 @@ const Inventories = () => {
                 </div>
             </div>
             <div className='text-center mb-5 mt-2'>
-                <Link to="manageinventories">
+                <Link to="/manageinventories">
                     <button className='btn btn-warning'>Manage Inventories</button>
                 </Link>
             </div>

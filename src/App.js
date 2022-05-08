@@ -10,6 +10,8 @@ import NotFound from './Pages/Shared/NotFound/NotFound';
 import Login from './Pages/Login/Login/Login';
 import Signup from './Pages/Login/Signup/Signup';
 import ManageInventories from './Pages/Home/ManageInventories/ManageInventories';
+import RequireAuth from './Pages/Login/RequireAuth/RequireAuth'
+import StockUpdate from './Pages/Home/StockUpdate/StockUpdate';
 
 function App() {
   return (
@@ -23,6 +25,11 @@ function App() {
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<Signup></Signup>}></Route>
         <Route path='/manageinventories' element={<ManageInventories></ManageInventories>}></Route>
+        <Route path='/stockupdate' element={
+          <RequireAuth>
+            <StockUpdate></StockUpdate>
+          </RequireAuth>
+        }></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
