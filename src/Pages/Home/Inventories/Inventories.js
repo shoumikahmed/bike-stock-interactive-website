@@ -12,7 +12,7 @@ const Inventories = () => {
     return (
         <div className='container'>
             <div className="row">
-                <h1 className='inventories-title text-warning mb-5 mt-5'><strong>Stocked Bikes</strong></h1>
+                <h1 className='inventories-title text-warning mb-5 mt-5'><strong>Inventory</strong></h1>
                 <div className='inventories-container'>
                     {
                         inventories.slice(0, 6).map(inventory => <Inventory
@@ -21,6 +21,9 @@ const Inventories = () => {
                         ></Inventory>)
                     }
                 </div>
+            </div>
+            <div className='text-center mb-5 mt-2'>
+                <button className='btn btn-warning'>Manage Inventories</button>
             </div>
         </div>
     );

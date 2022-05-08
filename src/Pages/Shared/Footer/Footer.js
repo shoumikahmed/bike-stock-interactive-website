@@ -11,7 +11,7 @@ const Footer = () => {
                     <div className=' d-flex align-items-center justify-content-center my-3'>
                         <a
                             href='https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-shoumikahmed'
-                            className='text-success me-4'
+                            className='text-warning me-4'
                         >
                             <svg
                                 width='20'
@@ -26,7 +26,7 @@ const Footer = () => {
                         </a>
                         <a
                             href='https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-shoumikahmed'
-                            className='text-success me-4'
+                            className='text-warning me-4'
                         >
                             <svg
                                 width='20'
@@ -43,7 +43,7 @@ const Footer = () => {
                         </a>
                         <a
                             href='https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-shoumikahmed'
-                            className='text-success me-4'
+                            className='text-warning me-4'
                         >
                             <svg
                                 width='20'
@@ -59,7 +59,7 @@ const Footer = () => {
                         </a>
                         <a
                             href='https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-shoumikahmed'
-                            className='text-success me-4'
+                            className='text-warning me-4'
                         >
                             <svg
                                 width='20'
@@ -75,7 +75,7 @@ const Footer = () => {
                         </a>
                         <a
                             href='https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-shoumikahmed'
-                            className='text-success me-4'
+                            className='text-warning me-4'
                         >
                             <svg
                                 width='20'

@@ -6,6 +6,7 @@ import Home from './Pages/Home/Home/Home';
 import Blogs from './Pages/Home/Blogs/Blogs'
 import Inventories from './Pages/Home/Inventories/Inventories';
 import Footer from './Pages/Shared/Footer/Footer';
+import NotFound from './Pages/Shared/NotFound/NotFound';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/inventories' element={<Inventories></Inventories>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
