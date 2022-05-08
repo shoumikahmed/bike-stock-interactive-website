@@ -35,11 +35,11 @@ const SocialLogin = () => {
                 </div>
                 {errorElement}
                 <div className='mt-2'>
-                    <button onClick={() => signInWithGoogle()} className='btn btn-success rounded-pill w-50 d-block mx-auto my-2'>
+                    <button onClick={() => signInWithGoogle()} className='btn btn-warning rounded-pill w-50 d-block mx-auto my-2'>
                         <img style={{ height: '30px' }} className='px-2' src={google} alt="" />
                         Google Sign In
                     </button>
-                    <button onClick={() => signInWithGithub()} className='btn btn-success rounded-pill w-50 d-block mx-auto'>
+                    <button onClick={() => signInWithGithub()} className='btn btn-warning rounded-pill w-50 d-block mx-auto'>
                         <img style={{ height: '30px' }} className='px-2' src={github} alt="" />
                         Github Sign In
                     </button>

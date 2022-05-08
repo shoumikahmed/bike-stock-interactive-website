@@ -87,7 +87,7 @@ const Login = () => {
 
     return (
         <div className='container w-50 mx-auto'>
-            <h1 className='text-success text-center my-3'>Please Login</h1>
+            <h1 className='text-warning text-center my-3'>Please Login</h1>
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Control onChange={handleEmailChange} type="email" placeholder="Enter email" required />
@@ -97,13 +97,13 @@ const Login = () => {
                     <Form.Control onChange={handlePasswordChange} type="password" placeholder="Password" required />
                 </Form.Group>
                 {errors?.password && <p className='text-danger'>Password error{errors.password}</p>}
-                <Button variant="success w-50 mx-auto d-block mb-2 rounded-pill" type="submit">
+                <Button variant="warning w-50 mx-auto d-block mb-2 rounded-pill" type="submit">
                     Login
                 </Button>
                 <ToastContainer />
             </Form>
-            <p className='mt-2'>New to Bike Stock? <Link to='/signup' className='text-success pe-auto text-decoration-none' >Please Sign up</Link></p>
-            <p className='mt-2'>Forget Password? <button onClick={resetPassword} className='btn btn-link text-success pe-auto text-decoration-none' >Reset Password</button></p>
+            <p className='mt-2'>New to Bike Stock? <Link to='/signup' className='text-warning pe-auto text-decoration-none' >Please Sign up</Link></p>
+            <p className='mt-2'>Forget Password? <button onClick={resetPassword} className='btn btn-link text-warning pe-auto text-decoration-none' >Reset Password</button></p>
             <SocialLogin></SocialLogin>
         </div>
     );
