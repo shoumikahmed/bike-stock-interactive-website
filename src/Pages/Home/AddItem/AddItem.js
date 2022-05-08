@@ -8,39 +8,35 @@ const AddItem = () => {
             <div className='container'>
                 <div className="additem-form row">
                     <div className="form-field col-lg-6">
-                        <input type="text" className='input-text' name="" id="name" />
-                        <label htmlFor="name" className='label'>Name</label>
+                        <input type="text" className='input-text' name="" id="name" placeholder='Item name' />
+                        <label htmlFor="name" className='label'></label>
                     </div>
                     <div className="form-field col-lg-6">
-                        <input type="email" className='input-text' name="" id="email" />
-                        <label htmlFor="email" className='label'>Email</label>
+                        <input type="number" className='input-text' name="" id="price" placeholder='Price' />
+                        <label htmlFor="price" className='label'></label>
                     </div>
                     <div className="form-field col-lg-6">
-                        <input type="text" className='input-text' name="" id="address1" />
-                        <label htmlFor="address1" className='label'>Address</label>
+                        <input type="number" className='input-text' name="" id="quantity" placeholder='Quantiy' />
+                        <label htmlFor="quantity" className='label'></label>
                     </div>
                     <div className="form-field col-lg-6">
-                        <input type="text" className='input-text' name="" id="address2" />
-                        <label htmlFor="address2" className='label'>Address (optional)</label>
+                        <input type="text" className='input-text' name="" id="supplier name" placeholder='Supplier Name' />
+                        <label htmlFor="supplier name" className='label'></label>
                     </div>
                     <div className="form-field col-lg-6">
-                        <input type="number" className='input-text' name="" id="code" />
-                        <label htmlFor="code" className='label'>Post Code</label>
+                        <input type="email" className='input-text' name="" id="email" placeholder='Email' />
+                        <label htmlFor="email" className='label'></label>
                     </div>
                     <div className="form-field col-lg-6">
-                        <input type="text" className='input-text' name="" id="country" />
-                        <label htmlFor="country" className='label'>Country</label>
+                        <input type="text" className='input-text' name="" id="image url" placeholder='Image Url' />
+                        <label htmlFor="image url" className='label'></label>
                     </div>
                     <div className="form-field col-lg-6">
-                        <input type="text" className='input-text' name="" id="city" />
-                        <label htmlFor="city" className='label'>City</label>
-                    </div>
-                    <div className="form-field col-lg-6">
-                        <input type="number" className='input-text' name="" id="phone" />
-                        <label htmlFor="phone" className='label'>Phone Number</label>
+                        <input type="text" className='input-text' name="" id="description" placeholder='Description' />
+                        <label htmlFor="description" className='label'></label>
                     </div>
                     <div className="form-field col-lg-12">
-                        <input type="submit" className='submit-btn' value="submit" />
+                        <input type="submit" className='submit-btn' value="ADD NOW" />
                     </div>
                 </div>
             </div>
