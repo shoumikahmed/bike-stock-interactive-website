@@ -2,6 +2,7 @@
     {
         "email": "shoumikahmed103@gmail.com",
         "name": "Honda",
+        "id": 1,
         "price": "$99,450",
         "description": "Honda is the world's largest manufacturer of two Wheelers, Recognized the world over as the symbol of Honda two wheelers, the 'Wings' arrived in Bangladesh.",
         "quantity": "70",
@@ -11,6 +12,7 @@
     {
         "email": "shoumikahmed103@gmail.com",
         "name": "Ducati",
+        "id": 2,
         "price": "$67,000",
         "description": "All information about our different models of bikes, the racing in MotoGP and Superbike, and dealers. Visit Ducati official website.",
         "quantity": "50",
@@ -20,6 +22,7 @@
     {
         "email": "shoumikahmed103@gmail.com",
         "name": "Kawasaki",
+        "id": 3,
         "price": "$78,800",
         "description": "Official website of Kawasaki Motors Corp., U.S.A., distributor of powersports vehicles including motorcycles, ATVs, Side x Sides and Jet Ski watercraft.",
         "quantity": "70",
@@ -29,6 +32,7 @@
     {
         "email": "shoumikahmed103@gmail.com",
         "name": "Suzuki",
+        "id": 4,
         "price": "$78,000",
         "description": "Welcome to the Suzuki Bangladesh | RANCON MOTORBIKES LTD. official website. Get your Suzuki Motorbike from our range of brand new motorbikes.",
         "quantity": "88",
@@ -38,6 +42,7 @@
     {
         "email": "shoumikahmed103@gmail.com",
         "name": "Yamaha",
+        "id": 5,
         "price": "$95,999",
         "description": "Yamaha motorcycle price, full specs and reviews in Bangladesh 2022. Yamaha bikes prices, news, all new models, showrooms in Bangladesh.",
         "quantity": "96",
@@ -47,6 +52,7 @@
     {
         "email": "shoumikahmed103@gmail.com",
         "name": "BMW",
+        "id": 6,
         "price": "$115,500",
         "description": "BMW Bike (Motorcycle) Price List, Top Model Bikes Overview in India. Find here BMW bike top models, prices, etc. & Buy Roadster, Naked bikes.",
         "quantity": "40",
@@ -56,6 +62,7 @@
     {
         "email": "shoumikahmed103@gmail.com",
         "name": "Triumph",
+        "id": 7,
         "price": "$125,500",
         "description": "The official Triumph site. Motorcycles that deliver the complete riding experience. View our range, find a dealer and test ride a Triumph icon today.",
         "quantity": "30",
@@ -65,6 +72,7 @@
     {
         "email": "shoumikahmed103@gmail.com",
         "name": "Harley Davidson",
+        "id": 8,
         "price": "$185,500",
         "description": "Official site of Harley-Davidson Motor Company. Check out current Harley motorcycles, locate a dealer, & browse motorcycle parts and apparel.",
         "quantity": "94",
@@ -74,6 +82,7 @@
     {
         "email": "shoumikahmed103@gmail.com",
         "name": "Royal Enfield",
+        "id": 9,
         "price": "$95,500",
         "description": "Explore latest motorcycles in India from Royal Enfield including Meteor 350, Himalayan, Classic and Bullet. Book a test ride of your favourite two wheelers.",
         "quantity": "32",
