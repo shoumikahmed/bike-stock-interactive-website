@@ -17,7 +17,7 @@ const ManageInventories = () => {
                 <div className='manageinventories-container'>
                     {
                         review.map(manageinventory => <div
-                            key={manageinventory?._id}
+                            key={manageinventory._id}
                         >
                             <div className='wrapper container pb-5'>
                                 <div className="card-box">
@@ -28,6 +28,7 @@ const ManageInventories = () => {
                                         <p className='m-0 mb-2'><small>{manageinventory?.description}</small></p>
                                         <p className='m-0 mb-2'><strong>Suppliername:</strong> {manageinventory?.suppliername}</p>
                                         <p className='m-0 mb-2'><strong>Quantity:</strong> {manageinventory?.quantity}</p>
+
                                         <div className='d-flex justify-content-between'>
                                             <div>
                                                 <button onClick={() => navigateToServiceDetail(manageinventory?._id)} className='button'>Stock Update</button>

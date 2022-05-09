@@ -6,13 +6,6 @@ import './Inventories.css'
 
 const Inventories = () => {
     const [review, setReview] = useReview([])
-    console.log(review)
-    // const [inventories, setInventories] = useState([])
-    // useEffect(() => {
-    //     fetch('inventories.json')
-    //         .then(res => res.json())
-    //         .then(data => setInventories(data))
-    // }, [])
     return (
         <div className='container'>
             <div className="row">
@@ -20,7 +13,7 @@ const Inventories = () => {
                 <div className='inventories-container'>
                     {
                         review.slice(0, 6).map(inventory => <Inventory
-                            key={inventory.id}
+                            key={inventory._id}
                             inventory={inventory}
                         ></Inventory>)
                     }
