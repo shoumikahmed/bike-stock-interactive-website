@@ -10,6 +10,26 @@ const ManageInventories = () => {
     const navigateToServiceDetail = id => {
         navigate(`/stockupdate/${id}`)
     }
+
+    const handleDelete = (id) => {
+        const prceed = window.confirm('Are you sure to delete this item?')
+        if (prceed) {
+            const url = `http://localhost:5000/inventory/${id}`
+            fetch(url, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    // console.log(data);
+                    const remaining = review.filter(manageinventory => manageinventory?._id !== id)
+                    setReview(remaining)
+                })
+
+        }
+
+    }
+
+
     return (
         <div className='container'>
             <div className="row">
@@ -34,7 +54,7 @@ const ManageInventories = () => {
                                                 <button onClick={() => navigateToServiceDetail(manageinventory?._id)} className='button'>Stock Update</button>
                                             </div>
                                             <div>
-                                                <button className='button'>Delete</button>
+                                                <button onClick={() => handleDelete(manageinventory?._id)} className='button'>Delete</button>
                                             </div>
                                         </div>
                                     </div>

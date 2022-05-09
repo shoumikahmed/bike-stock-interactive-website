@@ -2,6 +2,8 @@ import React from 'react';
 import './AddItem.css'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
+import { toast } from 'react-toastify';
+import { ToastContainer } from 'react-bootstrap';
 
 const AddItem = () => {
     const [user] = useAuthState(auth)
@@ -16,7 +18,26 @@ const AddItem = () => {
             suppliername: e.target.suppliername.value,
             img: e.target.img.value
         }
+        const url = `http://localhost:5000/inventory`
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(item)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                toast('Product Update Successfully')
+                e.target.reset()
+            })
     }
+
+
+
+
+
     return (
         <section className='Add-item'>
             <h2 className='title'>Add Item</h2>
@@ -54,6 +75,7 @@ const AddItem = () => {
                         <input type="submit" className='submit-btn' value="ADD NOW" />
                     </div>
                 </form>
+                <ToastContainer></ToastContainer>
             </div>
         </section>
     );

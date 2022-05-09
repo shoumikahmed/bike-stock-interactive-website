@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import useReview from '../../../Hooks/useInventory';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const StockUpdate = () => {
     const { id } = useParams()
@@ -14,8 +15,62 @@ const StockUpdate = () => {
                 setItem(data)
             })
     }, [])
+
+
+    const handleDelevired = (e) => {
+        e.preventDefault()
+        if (quantity >= 1) {
+            const newQuentity = parseInt(quantity - 1)
+            const item = { name, img, price, quantity: newQuentity, suppliername, description }
+            setItem(item)
+            const url = `http://localhost:5000/inventory/${id}`
+            fetch(url, {
+                method: 'PUT',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(item)
+            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    toast('Delevery done.')
+                    e.target.reset()
+                })
+        }
+        else {
+            toast('Sold Out')
+        }
+
+    }
+
+    const handlerRestocked = (e) => {
+        e.preventDefault()
+        const restokte = e.target.quantity.value
+        const newQuentity = parseInt(quantity) + parseInt(restokte)
+        const item = { name, img, price, quantity: newQuentity, suppliername, description }
+        setItem(item)
+        const url = `http://localhost:5000/inventory/${id}`
+        fetch(url, {
+            method: 'PUT',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(item)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                toast('Item Added')
+                e.target.reset()
+            })
+
+    }
+
+
     return (
         <div>
+            <ToastContainer></ToastContainer>
             <div className="w-25 border mx-auto mt-5">
                 <img src={img} className="card-img-top" alt="..." />
                 <div className="card-body">
@@ -25,13 +80,16 @@ const StockUpdate = () => {
                     <p>id: {id}</p>
                     <p>suppliername: {suppliername}</p>
                     <p>description: {description}</p>
-                    <button className='btn btn-warning'>Delivered</button>
+                    <button onClick={handleDelevired} className='btn btn-warning'>Delivered</button>
                 </div>
             </div>
+
             <div className='text-center mt-5 mb-3'>
-                <input type="number" name="" id="" placeholder='quantity' />
-                <br />
-                <button className='btn btn-warning mt-3'>Add Item</button>
+                <form onSubmit={handlerRestocked}>
+                    <input type="number" name="quantity" id="" placeholder='quantity' />
+                    <br />
+                    <button className='btn btn-warning mt-3'>Add Item</button>
+                </form>
             </div>
 
         </div>
