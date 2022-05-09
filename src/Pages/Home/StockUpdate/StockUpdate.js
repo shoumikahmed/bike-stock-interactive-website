@@ -22,6 +22,7 @@ const StockUpdate = () => {
                     <h5 className="card-title">{name}</h5>
                     <p>price: {price}</p>
                     <p>quantity: {quantity}</p>
+                    <p>id: {id}</p>
                     <p>suppliername: {suppliername}</p>
                     <p>description: {description}</p>
                     <button className='btn btn-warning'>Delivered</button>

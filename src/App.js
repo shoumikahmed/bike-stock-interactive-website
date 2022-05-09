@@ -30,9 +30,9 @@ function App() {
         <Route path='/additem' element={<AddItem></AddItem>}></Route>
         <Route path='/myitem' element={<MyItem></MyItem>}></Route>
         <Route path='/stockupdate/:id' element={
-
-          <StockUpdate></StockUpdate>
-
+          <RequireAuth>
+            <StockUpdate></StockUpdate>
+          </RequireAuth>
         }></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
