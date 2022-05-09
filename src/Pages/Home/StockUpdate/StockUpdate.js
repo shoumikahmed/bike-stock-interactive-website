@@ -8,7 +8,7 @@ const StockUpdate = () => {
     const [item, setItem] = useState({})
     const { name, img, price, quantity, suppliername, description } = item
     useEffect(() => {
-        const url = `http://localhost:5000/inventory/${id}`
+        const url = `https://boiling-badlands-76374.herokuapp.com/inventory/${id}`
         fetch(url)
             .then(res => res.json())
             .then(data => {
@@ -23,7 +23,7 @@ const StockUpdate = () => {
             const newQuentity = parseInt(quantity - 1)
             const item = { name, img, price, quantity: newQuentity, suppliername, description }
             setItem(item)
-            const url = `http://localhost:5000/inventory/${id}`
+            const url = `https://boiling-badlands-76374.herokuapp.com/inventory/${id}`
             fetch(url, {
                 method: 'PUT',
                 headers: {
@@ -50,7 +50,7 @@ const StockUpdate = () => {
         const newQuentity = parseInt(quantity) + parseInt(restokte)
         const item = { name, img, price, quantity: newQuentity, suppliername, description }
         setItem(item)
-        const url = `http://localhost:5000/inventory/${id}`
+        const url = `https://boiling-badlands-76374.herokuapp.com/inventory/${id}`
         fetch(url, {
             method: 'PUT',
             headers: {

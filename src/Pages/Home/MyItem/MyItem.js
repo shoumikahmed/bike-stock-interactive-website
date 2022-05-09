@@ -7,7 +7,7 @@ const MyItem = () => {
     const [myItem, setMyItem] = useState()
     useEffect(() => {
         const email = user?.email
-        fetch(`http://localhost:5000/myitem?email=${email}`)
+        fetch(`https://boiling-badlands-76374.herokuapp.com/myitem?email=${email}`)
             .then(res => res.json())
             .then(data => {
                 setMyItem(data)

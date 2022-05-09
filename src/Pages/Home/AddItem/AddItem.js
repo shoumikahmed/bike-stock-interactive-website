@@ -18,7 +18,7 @@ const AddItem = () => {
             suppliername: e.target.suppliername.value,
             img: e.target.img.value
         }
-        const url = `http://localhost:5000/inventory`
+        const url = `https://boiling-badlands-76374.herokuapp.com/inventory`
         fetch(url, {
             method: 'POST',
             headers: {
